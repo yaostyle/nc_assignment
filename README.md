@@ -1,6 +1,6 @@
 # nc assignment
 
-An assignement to create Master and Slave applications
+An assignment to create Master and Slave applications
 
 What does it do?
  - The slave app sends a GET request to an api with a parameter random number from 1 to 5.

@@ -3,9 +3,11 @@ import requests
 import sys
 import random
 
+api = 'https://postman-echo.com/delay/'
+
 def run():
     random_num = random.randint(0,5)
-    url = 'https://postman-echo.com/delay/{}'.format(random_num)
+    url = api+'{}'.format(random_num)
     with requests.Session() as session:
         try:
             with session.get(url) as response:

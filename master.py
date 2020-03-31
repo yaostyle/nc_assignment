@@ -13,7 +13,7 @@ async def run():
     n = 0
 
     # Resursive loop until reach 5 success tries
-    while n <= 5: 
+    while n < 5: 
         rc = call(['./slave.py'], shell=True)
         # If exit code is 0, add to success counts
         if rc == 0:
